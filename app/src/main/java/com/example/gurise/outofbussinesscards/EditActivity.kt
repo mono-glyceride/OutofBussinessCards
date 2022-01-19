@@ -1,4 +1,4 @@
-package com.example.gurise.highandlow
+package com.example.gurise.outofbussinesscards
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
