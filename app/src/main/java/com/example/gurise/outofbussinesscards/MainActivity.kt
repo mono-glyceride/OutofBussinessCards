@@ -1,9 +1,6 @@
 package com.example.gurise.outofbussinesscards
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 import com.example.gurise.outofbussinesscards.databinding.ActivityMainBinding
@@ -43,21 +40,4 @@ class MainActivity : AppCompatActivity() {
             binding.nameText.text = name
         }
     }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.edit -> {
-                val intent = Intent(this, EditActivity::class.java)
-                startActivity(intent)
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
-
 }
